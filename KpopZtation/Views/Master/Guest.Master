@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Guest.master.cs" Inherits="KpopZtation.Views.Master.Guest" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:HyperLink ID="hlhome" runat="server" NavigateUrl="~/Views/Home.aspx">Home</asp:HyperLink>
+            <asp:HyperLink ID="hllogin" runat="server" NavigateUrl="~/Views/Login.aspx">Login</asp:HyperLink>
+            <asp:HyperLink ID="hlregister" runat="server" NavigateUrl="~/Views/Register.aspx">Register</asp:HyperLink>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
