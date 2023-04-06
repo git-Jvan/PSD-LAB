@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Customer.master.cs" Inherits="KpopZtation.Views.Master.Customer" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:HyperLink ID="hlhome" runat="server" NavigateUrl="~/Views/Home.aspx">Home</asp:HyperLink>
+            <asp:HyperLink ID="hlcart" runat="server" NavigateUrl="~/Views/Cart.aspx">Cart</asp:HyperLink>
+            <asp:HyperLink ID="hltransaction" runat="server" NavigateUrl="~/Views/TransactionHistory.aspx">Transaction</asp:HyperLink>
+            <asp:HyperLink ID="hlupdateprofile" runat="server" NavigateUrl="~/Views/UpdateProfile.aspx">Update Profile</asp:HyperLink>
+            <asp:LinkButton ID="lblogout" runat="server" OnClick="lblogout_Click">Logout</asp:LinkButton>
+            <div>
+                <asp:Label ID="lblcustomer" runat="server" Text="Hello | "></asp:Label>
+                <asp:HyperLink ID="hlprofile" runat="server" NavigateUrl="~/Views/Profile.aspx"></asp:HyperLink>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
